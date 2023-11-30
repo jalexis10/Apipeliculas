@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "4d04c3b3-ad0c-4269-a8c2-d92f6425702a",
+		"name": "API RESTFul",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29903640"
+	},
+	"item": [
+		{
+			"name": "listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/peliculas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"peliculas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/peliculas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"peliculas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/peliculas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"peliculas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"pelicula_titulo\": \"El Señor de los Anillos: El retorno del Rey\",\t\r\n\t\"pelicula_director\": \"Peter Jackson\",\t\r\n    \"pelicula_año\": 2003,\r\n    \"pelicula_genero\": \"Fantasía\",\r\n\t\"pelicula_duracion\": 201,\t\r\n\t\"pelicula_calificacion\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/peliculas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"peliculas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "agregar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"pelicula_titulo\": \"El Señor de los Anillos: El retorno del Rey\",\t\r\n\t\"pelicula_director\": \"Peter Jackson\",\t\r\n    \"pelicula_año\": 2003,\r\n    \"pelicula_genero\": \"Fantasía\",\r\n\t\"pelicula_duracion\": 201,\t\r\n\t\"pelicula_calificacion\": 8\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/peliculas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"peliculas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
